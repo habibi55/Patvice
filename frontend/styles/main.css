@@ -78,9 +78,21 @@ body {
   max-width: 50px;
 }
 
+.patvice-shop .card .card-body .title a,
+.patvice-shop .card .card-body .title a:hover,
+.patvice-shop .card .card-body .title a:focus,
+.patvice-shop .card .card-body .title a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .patvice-shop .card .card-body .id {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.genre col {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
