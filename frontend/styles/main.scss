@@ -85,65 +85,63 @@ body {
     .thumbnail {
       padding: 15px 15px 0 15px;
     }
+    .card-body {
+      .line {
+        margin-bottom: 5px;
+        .profile {
+          max-width: 45px;
+        }
 
-    .line {
-      .profile {
-        max-width: 45px;
-        // padding-right: 15px;
+        p {
+          margin-left: 5px;
+          margin-top: 4px;
+          font-size: 25px;
+        }
+
+        .wishlist {
+          margin-left: 5px;
+          max-width: 45px;
+        }
       }
 
-      p {
-        margin-left: 10px;
-        margin-top: 4px;
-        font-size: 25px;
+      .rating {
+        font-size: 18px;
+        margin-bottom: -5px;
+
+        img {
+          max-width: 25px;
+          margin-right: 8px;
+        }
+
+        .star {
+          float: left;
+        }
       }
 
-      .wishlist {
-        margin-left: 5px;
-        max-width: 45px;
+      .title {
+        margin-bottom: 25px;
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+          text-decoration: none;
+          color: inherit;
+          font-size: 20px;
+        }
+      }
+
+      .harga {
+        p {
+          color: rgb(170, 170, 170);
+          margin-bottom: 2px;
+          font-weight: 600;
+        }
+
+        h4 {
+          font-weight: bolder;
+        }
       }
     }
-  }
-  // .card {
-  //   border: none;
-  //   img {
-  //     max-width: 230px;
-  //     margin: 15px 15px 0 15px;
-  //   }
-
-  //   .card-body {
-  //     padding: 15px;
-
-  //     .line {
-  //       overflow: hidden;
-  //       float: left;
-  //     }
-
-  //     .profile {
-  //       height: 45px;
-  //       width: 70px;
-  //       float: left;
-  //     }
-
-  //     .title {
-  //       a,
-  //       a:hover,
-  //       a:focus,
-  //       a:active {
-  //         text-decoration: none;
-  //         color: inherit;
-  //       }
-  //     }
-
-  //     .id {
-  //       justify-content: center;
-  //     }
-  //   }
-  // }
-}
-
-.genre {
-  col {
-    text-align: center;
   }
 }

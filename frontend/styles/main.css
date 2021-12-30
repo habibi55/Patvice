@@ -69,22 +69,59 @@ body {
   padding: 15px 15px 0 15px;
 }
 
-.patvice-shop .card .line .profile {
+.patvice-shop .card .card-body .line {
+  margin-bottom: 5px;
+}
+
+.patvice-shop .card .card-body .line .profile {
   max-width: 45px;
 }
 
-.patvice-shop .card .line p {
-  margin-left: 10px;
+.patvice-shop .card .card-body .line p {
+  margin-left: 5px;
   margin-top: 4px;
   font-size: 25px;
 }
 
-.patvice-shop .card .line .wishlist {
+.patvice-shop .card .card-body .line .wishlist {
   margin-left: 5px;
   max-width: 45px;
 }
 
-.genre col {
-  text-align: center;
+.patvice-shop .card .card-body .rating {
+  font-size: 18px;
+  margin-bottom: -5px;
+}
+
+.patvice-shop .card .card-body .rating img {
+  max-width: 25px;
+  margin-right: 8px;
+}
+
+.patvice-shop .card .card-body .rating .star {
+  float: left;
+}
+
+.patvice-shop .card .card-body .title {
+  margin-bottom: 25px;
+}
+
+.patvice-shop .card .card-body .title a,
+.patvice-shop .card .card-body .title a:hover,
+.patvice-shop .card .card-body .title a:focus,
+.patvice-shop .card .card-body .title a:active {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+.patvice-shop .card .card-body .harga p {
+  color: #aaaaaa;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.patvice-shop .card .card-body .harga h4 {
+  font-weight: bolder;
 }
 /*# sourceMappingURL=main.css.map */
