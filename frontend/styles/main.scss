@@ -81,40 +81,65 @@ body {
 .patvice-shop {
   .card {
     border: none;
-    img {
-      max-width: 230px;
-      margin: 15px 15px 0 15px;
+
+    .thumbnail {
+      padding: 15px 15px 0 15px;
     }
 
-    .card-body {
-      padding: 15px;
-
-      .line {
-        overflow: hidden;
-        float: left;
-      }
-
+    .line {
       .profile {
-        height: 45px;
-        width: 70px;
-        float: left;
+        max-width: 45px;
+        // padding-right: 15px;
       }
 
-      .title {
-        a,
-        a:hover,
-        a:focus,
-        a:active {
-          text-decoration: none;
-          color: inherit;
-        }
+      p {
+        margin-left: 10px;
+        margin-top: 4px;
+        font-size: 25px;
       }
 
-      .id {
-        justify-content: center;
+      .wishlist {
+        margin-left: 5px;
+        max-width: 45px;
       }
     }
   }
+  // .card {
+  //   border: none;
+  //   img {
+  //     max-width: 230px;
+  //     margin: 15px 15px 0 15px;
+  //   }
+
+  //   .card-body {
+  //     padding: 15px;
+
+  //     .line {
+  //       overflow: hidden;
+  //       float: left;
+  //     }
+
+  //     .profile {
+  //       height: 45px;
+  //       width: 70px;
+  //       float: left;
+  //     }
+
+  //     .title {
+  //       a,
+  //       a:hover,
+  //       a:focus,
+  //       a:active {
+  //         text-decoration: none;
+  //         color: inherit;
+  //       }
+  //     }
+
+  //     .id {
+  //       justify-content: center;
+  //     }
+  //   }
+  // }
 }
 
 .genre {

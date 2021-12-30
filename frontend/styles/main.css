@@ -65,38 +65,23 @@ body {
   border: none;
 }
 
-.patvice-shop .card img {
-  max-width: 230px;
-  margin: 15px 15px 0 15px;
+.patvice-shop .card .thumbnail {
+  padding: 15px 15px 0 15px;
 }
 
-.patvice-shop .card .card-body {
-  padding: 15px;
+.patvice-shop .card .line .profile {
+  max-width: 45px;
 }
 
-.patvice-shop .card .card-body .line {
-  overflow: hidden;
-  float: left;
+.patvice-shop .card .line p {
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 25px;
 }
 
-.patvice-shop .card .card-body .profile {
-  height: 45px;
-  width: 70px;
-  float: left;
-}
-
-.patvice-shop .card .card-body .title a,
-.patvice-shop .card .card-body .title a:hover,
-.patvice-shop .card .card-body .title a:focus,
-.patvice-shop .card .card-body .title a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
-.patvice-shop .card .card-body .id {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.patvice-shop .card .line .wishlist {
+  margin-left: 5px;
+  max-width: 45px;
 }
 
 .genre col {
