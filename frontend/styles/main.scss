@@ -81,15 +81,23 @@ body {
 .patvice-shop {
   .card {
     border: none;
-    .header img {
+    img {
       max-width: 230px;
       margin: 15px 15px 0 15px;
     }
 
     .card-body {
       padding: 15px;
-      img {
-        max-width: 50px;
+
+      .line {
+        overflow: hidden;
+        float: left;
+      }
+
+      .profile {
+        height: 45px;
+        width: 70px;
+        float: left;
       }
 
       .title {

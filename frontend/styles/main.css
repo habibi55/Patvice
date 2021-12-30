@@ -65,7 +65,7 @@ body {
   border: none;
 }
 
-.patvice-shop .card .header img {
+.patvice-shop .card img {
   max-width: 230px;
   margin: 15px 15px 0 15px;
 }
@@ -74,8 +74,15 @@ body {
   padding: 15px;
 }
 
-.patvice-shop .card .card-body img {
-  max-width: 50px;
+.patvice-shop .card .card-body .line {
+  overflow: hidden;
+  float: left;
+}
+
+.patvice-shop .card .card-body .profile {
+  height: 45px;
+  width: 70px;
+  float: left;
 }
 
 .patvice-shop .card .card-body .title a,
