@@ -1,18 +1,24 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   font-family: "Inter", sans-serif;
   // Primary Color :  #5e95ff
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    // color: inherit;
+  }
 }
 
 /* Variable Define */
 :root {
-  --primary-color: #5e95ff;
+  --primary-color: #367bff;
+  --secondary-color: #5e95ff;
 }
 
-// .container {
-//   min-width: 80px;
-// }
-
+/* Navbar */
 .navbar-light {
   .navbar-nav {
     .nav-item {
@@ -48,6 +54,7 @@ body {
   }
 }
 
+/* Sorting & Filter */
 .sort-filter {
   margin-top: 20px;
 
@@ -78,6 +85,7 @@ body {
   }
 }
 
+/* Shop */
 .patvice-shop {
   .card {
     border: none;
@@ -146,6 +154,25 @@ body {
   }
 }
 
+/* Genre */
+.genre {
+  a,
+  a:focus,
+  a:active {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  a:hover {
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+}
+
+/* Number Page */
 .number {
   margin-top: 60px;
 
@@ -163,11 +190,34 @@ body {
   }
 }
 
+.user_shop {
+  margin-top: 30px;
+
+  .link {
+    a {
+      font-size: 15px;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+  }
+
+  .left {
+    .title-thumbnail {
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .carousel {
+      max-width: 80%;
+    }
+  }
+}
+
+/* Footer */
 footer {
   margin-top: 30px;
 
   .summary {
-    margin-top: -30px;
+    margin-top: -20px;
     img {
       max-width: 100px;
     }
@@ -195,7 +245,7 @@ footer {
     a,
     a:focus,
     a:active {
-      margin-bottom: 5px;
+      margin-bottom: 20px;
       text-decoration: none;
       color: inherit;
       font-size: 16px;
@@ -209,6 +259,7 @@ footer {
 
   .under {
     padding-top: 15px;
+    font-weight: 600;
     color: var(--primary-color);
   }
 }

@@ -1,13 +1,22 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   font-family: "Inter", sans-serif;
+}
+
+body a,
+body a:hover,
+body a:focus,
+body a:active {
+  text-decoration: none;
 }
 
 /* Variable Define */
 :root {
-  --primary-color: #5e95ff;
+  --primary-color: #367bff;
+  --secondary-color: #5e95ff;
 }
 
+/* Navbar */
 .navbar-light .navbar-nav .nav-item {
   margin: 0 35px 0 35px;
 }
@@ -34,6 +43,7 @@ body {
   color: #fff;
 }
 
+/* Sorting & Filter */
 .sort-filter {
   margin-top: 20px;
 }
@@ -61,6 +71,7 @@ body {
   font-weight: 500;
 }
 
+/* Shop */
 .patvice-shop .card {
   border: none;
 }
@@ -125,6 +136,23 @@ body {
   font-weight: bolder;
 }
 
+/* Genre */
+.genre a,
+.genre a:focus,
+.genre a:active {
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.genre a:hover {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Number Page */
 .number {
   margin-top: 60px;
 }
@@ -141,12 +169,32 @@ body {
   max-width: 30px;
 }
 
+.user_shop {
+  margin-top: 30px;
+}
+
+.user_shop .link a {
+  font-size: 15px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.user_shop .left .title-thumbnail {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.user_shop .left .carousel {
+  max-width: 80%;
+}
+
+/* Footer */
 footer {
   margin-top: 30px;
 }
 
 footer .summary {
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 footer .summary img {
@@ -175,7 +223,7 @@ footer .kategori h5 {
 footer .kategori a,
 footer .kategori a:focus,
 footer .kategori a:active {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   text-decoration: none;
   color: inherit;
   font-size: 16px;
@@ -188,6 +236,7 @@ footer .kategori a:hover {
 
 footer .under {
   padding-top: 15px;
+  font-weight: 600;
   color: var(--primary-color);
 }
 /*# sourceMappingURL=main.css.map */
