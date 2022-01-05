@@ -216,30 +216,61 @@ body {
       max-width: 90%;
     }
 
+    /* Mengenai penjual */
     .profile {
       max-width: 80%;
-      .pp {
-        min-width: 300px;
-      }
+      margin-top: 60px;
 
-      .desc {
-        img {
-          float: left;
+      .content {
+        margin-top: 10px;
+
+        .pp {
+          min-width: 300px;
+          margin-right: -180px;
+
+          img {
+            width: 100px;
+          }
         }
 
-        .visit {
-          border-color: var(--primary-color);
-          color: var(--primary-color);
-          font-weight: 500;
-
-          &:hover {
-            color: #fff;
+        .desc {
+          .name {
             font-weight: 500;
-            background-color: var(--primary-color);
+            font-size: 20px;
+          }
+
+          .rating {
+            margin-top: -5px;
+
+            img {
+              float: left;
+              max-width: 25px;
+            }
+            p {
+              padding-top: 2px;
+              padding-left: 30px;
+            }
+          }
+
+          .visit {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-top: 10px;
+
+            &:hover {
+              color: #fff;
+              font-weight: 500;
+              background-color: var(--primary-color);
+            }
           }
         }
       }
     }
+  }
+
+  .right {
+    height: 300px;
   }
 }
 
