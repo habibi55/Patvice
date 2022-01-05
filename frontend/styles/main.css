@@ -169,6 +169,7 @@ body a:active {
   max-width: 30px;
 }
 
+/* User Shop */
 .user_shop {
   margin-top: 30px;
 }
@@ -179,13 +180,46 @@ body a:active {
   font-weight: 600;
 }
 
+.user_shop .left {
+  padding-right: 50px;
+}
+
+.user_shop .left h5 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .user_shop .left .title-thumbnail {
   font-weight: bold;
   font-size: 30px;
 }
 
 .user_shop .left .carousel {
+  max-width: 90%;
+}
+
+.user_shop .left .profile {
   max-width: 80%;
+}
+
+.user_shop .left .profile .pp {
+  min-width: 300px;
+}
+
+.user_shop .left .profile .desc img {
+  float: left;
+}
+
+.user_shop .left .profile .desc .visit {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.user_shop .left .profile .desc .visit:hover {
+  color: #fff;
+  font-weight: 500;
+  background-color: var(--primary-color);
 }
 
 /* Footer */

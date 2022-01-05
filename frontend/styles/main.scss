@@ -190,6 +190,7 @@ body {
   }
 }
 
+/* User Shop */
 .user_shop {
   margin-top: 30px;
 
@@ -202,12 +203,42 @@ body {
   }
 
   .left {
+    padding-right: 50px;
+    h5 {
+      font-weight: bold;
+      font-size: 25px;
+    }
     .title-thumbnail {
       font-weight: bold;
       font-size: 30px;
     }
     .carousel {
+      max-width: 90%;
+    }
+
+    .profile {
       max-width: 80%;
+      .pp {
+        min-width: 300px;
+      }
+
+      .desc {
+        img {
+          float: left;
+        }
+
+        .visit {
+          border-color: var(--primary-color);
+          color: var(--primary-color);
+          font-weight: 500;
+
+          &:hover {
+            color: #fff;
+            font-weight: 500;
+            background-color: var(--primary-color);
+          }
+        }
+      }
     }
   }
 }
