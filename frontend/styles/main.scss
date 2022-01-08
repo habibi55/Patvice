@@ -8,7 +8,7 @@ body {
   a:focus,
   a:active {
     text-decoration: none;
-    // color: inherit;
+    color: inherit;
   }
 }
 
@@ -202,7 +202,7 @@ body {
     }
   }
 
-  .left {
+  .left-content {
     padding-right: 50px;
     h5 {
       font-weight: bold;
@@ -269,8 +269,108 @@ body {
     }
   }
 
-  .right {
-    height: 300px;
+  .right-content {
+    height: 100%;
+
+    .title-packet {
+      margin-left: -12px;
+      margin-right: -12px;
+
+      a {
+        font-weight: 600;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+
+        &:active {
+          color: var(--primary-color);
+          border-bottom: 2px solid var(--primary-color);
+        }
+
+        &:visited {
+          color: var(--primary-color);
+          border-bottom: 2px solid var(--primary-color);
+        }
+
+        // &:active {
+        //   color: var(--primary-color);
+        // }
+      }
+    }
+
+    .tab-content {
+      margin-left: -12px;
+      margin-right: -12px;
+
+      .title {
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .desc {
+        font-size: 18px;
+      }
+
+      .list-title {
+        font-weight: bold;
+      }
+
+      .list {
+        margin-top: -10px;
+        margin-left: -12px;
+
+        .list-item {
+          margin-top: 10px;
+        }
+      }
+
+      .time {
+        img {
+          max-height: 30px;
+        }
+
+        .pengerjaan {
+          margin-top: 3px;
+          margin-left: 5px;
+        }
+      }
+
+      .title-harga {
+        font-weight: 600;
+        opacity: 80%;
+      }
+
+      .harga {
+        margin-top: -20px;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .pesan {
+        color: white;
+        background-color: var(--primary-color);
+        font-weight: 600;
+
+        &:hover {
+          background-color: #1656cc;
+        }
+      }
+
+      .hubungi {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+        border-width: 1px;
+        font-weight: 600;
+
+        &:hover {
+          color: white;
+          background-color: var(--primary-color);
+          border-width: 1px;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
 

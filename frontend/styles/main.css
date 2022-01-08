@@ -8,6 +8,7 @@ body a:hover,
 body a:focus,
 body a:active {
   text-decoration: none;
+  color: inherit;
 }
 
 /* Variable Define */
@@ -180,77 +181,171 @@ body a:active {
   font-weight: 600;
 }
 
-.user_shop .left {
+.user_shop .left-content {
   padding-right: 50px;
   /* Mengenai penjual */
 }
 
-.user_shop .left h5 {
+.user_shop .left-content h5 {
   font-weight: bold;
   font-size: 25px;
 }
 
-.user_shop .left .title-thumbnail {
+.user_shop .left-content .title-thumbnail {
   font-weight: bold;
   font-size: 30px;
 }
 
-.user_shop .left .carousel {
+.user_shop .left-content .carousel {
   max-width: 90%;
 }
 
-.user_shop .left .profile {
+.user_shop .left-content .profile {
   max-width: 80%;
   margin-top: 60px;
 }
 
-.user_shop .left .profile .content {
+.user_shop .left-content .profile .content {
   margin-top: 10px;
 }
 
-.user_shop .left .profile .content .pp {
+.user_shop .left-content .profile .content .pp {
   min-width: 300px;
   margin-right: -180px;
 }
 
-.user_shop .left .profile .content .pp img {
+.user_shop .left-content .profile .content .pp img {
   width: 100px;
 }
 
-.user_shop .left .profile .content .desc .name {
+.user_shop .left-content .profile .content .desc .name {
   font-weight: 500;
   font-size: 20px;
 }
 
-.user_shop .left .profile .content .desc .rating {
+.user_shop .left-content .profile .content .desc .rating {
   margin-top: -5px;
 }
 
-.user_shop .left .profile .content .desc .rating img {
+.user_shop .left-content .profile .content .desc .rating img {
   float: left;
   max-width: 25px;
 }
 
-.user_shop .left .profile .content .desc .rating p {
+.user_shop .left-content .profile .content .desc .rating p {
   padding-top: 2px;
   padding-left: 30px;
 }
 
-.user_shop .left .profile .content .desc .visit {
+.user_shop .left-content .profile .content .desc .visit {
   border-color: var(--primary-color);
   color: var(--primary-color);
   font-weight: 500;
   margin-top: 10px;
 }
 
-.user_shop .left .profile .content .desc .visit:hover {
+.user_shop .left-content .profile .content .desc .visit:hover {
   color: #fff;
   font-weight: 500;
   background-color: var(--primary-color);
 }
 
-.user_shop .right {
-  height: 300px;
+.user_shop .right-content {
+  height: 100%;
+}
+
+.user_shop .right-content .title-packet {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.user_shop .right-content .title-packet a {
+  font-weight: 600;
+}
+
+.user_shop .right-content .title-packet a:hover {
+  color: var(--primary-color);
+}
+
+.user_shop .right-content .title-packet a:active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.user_shop .right-content .title-packet a:visited {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.user_shop .right-content .tab-content {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.user_shop .right-content .tab-content .title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.user_shop .right-content .tab-content .desc {
+  font-size: 18px;
+}
+
+.user_shop .right-content .tab-content .list-title {
+  font-weight: bold;
+}
+
+.user_shop .right-content .tab-content .list {
+  margin-top: -10px;
+  margin-left: -12px;
+}
+
+.user_shop .right-content .tab-content .list .list-item {
+  margin-top: 10px;
+}
+
+.user_shop .right-content .tab-content .time img {
+  max-height: 30px;
+}
+
+.user_shop .right-content .tab-content .time .pengerjaan {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.user_shop .right-content .tab-content .title-harga {
+  font-weight: 600;
+  opacity: 80%;
+}
+
+.user_shop .right-content .tab-content .harga {
+  margin-top: -20px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.user_shop .right-content .tab-content .pesan {
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.user_shop .right-content .tab-content .pesan:hover {
+  background-color: #1656cc;
+}
+
+.user_shop .right-content .tab-content .hubungi {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-width: 1px;
+  font-weight: 600;
+}
+
+.user_shop .right-content .tab-content .hubungi:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border-width: 1px;
+  font-weight: 600;
 }
 
 /* Footer */
