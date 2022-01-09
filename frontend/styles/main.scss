@@ -91,7 +91,9 @@ body {
     border: none;
 
     .thumbnail {
-      padding: 15px 15px 0 15px;
+      padding: 0 15px 0 15px;
+      border-radius: 9%;
+      margin-top: 15px;
     }
     .card-body {
       .line {

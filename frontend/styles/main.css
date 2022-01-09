@@ -78,7 +78,9 @@ body a:active {
 }
 
 .patvice-shop .card .thumbnail {
-  padding: 15px 15px 0 15px;
+  padding: 0 15px 0 15px;
+  border-radius: 9%;
+  margin-top: 15px;
 }
 
 .patvice-shop .card .card-body .line {
