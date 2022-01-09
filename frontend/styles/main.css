@@ -79,6 +79,7 @@ body a:active {
 
 .patvice-shop .card .thumbnail {
   padding: 15px 15px 0 15px;
+  max-width: 200px;
 }
 
 .patvice-shop .card .card-body .line {
