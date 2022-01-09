@@ -78,8 +78,14 @@ body a:active {
 }
 
 .patvice-shop .card .thumbnail {
+<<<<<<< HEAD
   padding: 15px 15px 0 15px;
   max-width: 200px;
+=======
+  padding: 0 15px 0 15px;
+  border-radius: 9%;
+  margin-top: 15px;
+>>>>>>> b4d2658b49c673051dacf241b8811eb9161bfcb2
 }
 
 .patvice-shop .card .card-body .line {
