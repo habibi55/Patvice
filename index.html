@@ -28,10 +28,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Obrolan</a>
+            <a class="nav-link active" aria-current="page" href="/chat.html">Obrolan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Favorit</a>
+            <a class="nav-link active" aria-current="page" href="/wishlist.html">List</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/order.html">Pesanan</a>
@@ -72,14 +72,15 @@
           </nav>
 
           <div class="btn-filter col-10">
-            <div class="d-flex justify-content-around ">
-              <button type="button" class="btn btn-filter mx-2">All</button>
-              <button type="button" class="btn btn-filter mx-2">Logo Design</button>
-              <button type="button" class="btn btn-filter mx-2">Web</button>
-              <button type="button" class="btn btn-filter mx-2">Video Editing</button>
-              <button type="button" class="btn btn-filter mx-2">Branding</button>
-              <button type="button" class="btn btn-filter mx-2">Poster</button>
-              <button type="button" class="btn btn-filter mx-2">Product</button>
+            <div class="d-flex justify-content-around" id="myBtnContainer">
+              <button type="button" class="btn active btn-filter mx-2" onclick="filterSelection('all')">All</button>
+              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('logo')">Logo Design</button>
+              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('web')">Web</button>
+              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('ve')">Video
+                Editing</button>
+              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('branding')">Branding</button>
+              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('poster')">Poster</button>
+              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('product')">Product</button>
             </div>
           </div>
         </div>
@@ -90,8 +91,9 @@
   <!-- Carding -->
   <section class="patvice-shop">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div class="col">
+      <div class="row row-cols-1 row-cols-md-4 g-4 objects">
+
+        <div class="col web">
           <div class="card h-100" id="hbb">
             <img src="/frontend/images/raisyaa/hbb.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -108,12 +110,10 @@
                   </div>
                 </div>
               </div>
-
               <div class="rating">
                 <img src="/frontend/images/star.png" class="star" alt="">
                 <p>5.0 (5)</p>
               </div>
-
               <div class="title">
                 <a class="stretched-link" href="/user/habibi.html">Saya bisa membuat web design dengan
                   responsive </a>
@@ -127,7 +127,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ilustrasi.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -162,7 +162,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
+
+        <div class="col logo">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ask1.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -197,7 +198,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/nico1.jpeg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -232,7 +233,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col brand">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/azra1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -267,7 +268,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col ve">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/farah1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -302,7 +303,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col product">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/eko1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -337,7 +338,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/aldila1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -372,6 +373,288 @@
             </div>
           </div>
         </div>
+
+        <div class="col poster">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/aldila1.jpg" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/raisyaa/aldila.jpg" class="profile rounded-circle" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Aldila</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>5.0 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Saya bisa membuat flyer desain dengan style yang
+                  diinginkan.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.85.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col logo">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/ask1.png" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/mini-profile.png" class="profile" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Aska</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>4.8 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Logo desain minimalis dengan gratis source file.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.50.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col web">
+          <div class="card h-100" id="hbb">
+            <img src="/frontend/images/raisyaa/hbb.png" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/raisyaa/hbb1.jpg" class="profile rounded-circle" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>habibi1701</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>5.0 (5)</p>
+              </div>
+              <div class="title">
+                <a class="stretched-link" href="/user/habibi.html">Saya bisa membuat web design dengan
+                  responsive </a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.170.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col brand">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/azra1.jpg" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/raisyaa/azra.jpg" class="profile rounded-circle" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Azra</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>4.8 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Saya dapat membuat desain satu paket coffeshop.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.65.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col ve">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/farah1.jpg" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/raisyaa/farah.png" class="profile rounded-circle" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Farah</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>4.9 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Saya dapat membuat video dengan spesial efek.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.135.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col product">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/eko1.jpg" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/raisyaa/eko.jpg" class="profile rounded-circle" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Eko</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>5.0 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Saya dapat mengcustom berbagai macam desain produk.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.45.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col poster">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/ilustrasi.jpg" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/raisyaa/Raisyapoto.jpg" class="profile rounded-circle" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Raisyaph</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>4.8 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Saya akan membuat fotomu menjadi ilustrasi yang
+                  diinginkan.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.75.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col logo">
+          <div class="card h-100">
+            <img src="/frontend/images/raisyaa/ask1.png" class="thumbnail card-img-top img-fluid" alt="">
+            <div class="card-body">
+              <div class="line">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="/frontend/images/mini-profile.png" class="profile" alt="">
+                  </div>
+                  <div class="col-7">
+                    <p>Aska</p>
+                  </div>
+                  <div class="col-2 ">
+                    <img src="/frontend/images/favorite.png" class="wishlist" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="rating">
+                <img src="/frontend/images/star.png" class="star" alt="">
+                <p>4.8 (5)</p>
+              </div>
+
+              <div class="title">
+                <a class="stretched-link" href="/shop.html">Logo desain minimalis dengan gratis source file.</a>
+              </div>
+
+              <div class="harga">
+                <p>Mulai dari</p>
+                <h4>Rp.50.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -450,7 +733,7 @@
     <p class="under border-top border-1 border-dark text-center mt-5">2021 Patvice</p>
   </footer>
 
-
+  <script src="/frontend/scripts/main.js"></script>
   <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
   <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
   <script src="/frontend/libraries/retina/retina.min.js"></script>

@@ -72,6 +72,10 @@ body a:active {
   font-weight: 500;
 }
 
+.show {
+  display: block;
+}
+
 /* Shop */
 .patvice-shop .card {
   border: none;
@@ -256,8 +260,31 @@ body a:active {
   background-color: var(--primary-color);
 }
 
+.user_shop .left-content .profile .content .letak {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
 .user_shop .left-content .profile .content .letak .negara img {
-  width: 30px;
+  width: 60px;
+  float: left;
+}
+
+.user_shop .left-content .profile .content .letak .negara p {
+  padding-top: 18px;
+  margin-left: 80px;
+}
+
+.user_shop .left-content .profile .content .letak .kapan .gabung {
+  margin-bottom: 5px;
+}
+
+.user_shop .left-content .profile .content .letak .kapan .tanggal {
+  font-weight: bold;
+}
+
+.user_shop .left-content .profile .content .summary {
+  padding: 30px;
 }
 
 .user_shop .right-content {
@@ -280,10 +307,9 @@ body a:active {
   border-bottom: 2px solid var(--primary-color);
 }
 
-.user_shop .right-content .title-packet a:active {
+.user_shop .right-content .title-packet a.active {
   color: var(--primary-color) !important;
   font-weight: 600;
-  border-bottom: 2px solid var(--primary-color);
 }
 
 .user_shop .right-content .tab-content {
