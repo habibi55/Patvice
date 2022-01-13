@@ -1,45 +1,27 @@
-filterSelection("all");
+const categoryTitle = document.querySelectorAll(".btn-filter");
+const allCategoryPosts = document.querySelectorAll(".all");
 
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("col");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
+for (let i = 0; i < categoryTitle.length; i++) {
+  categoryTitle[i].addEventListener(
+    "click",
+    filterPosts.bind(this, categoryTitle[i])
+  );
 }
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+function filterPosts(item) {
+  changeActivePosition(item);
+  for (let i = 0; i < allCategoryPosts.length; i++) {
+    if (allCategoryPosts[i].classList.contains(item.attributes.id.value)) {
+      allCategoryPosts[i].style.display = "block";
+    } else {
+      allCategoryPosts[i].style.display = "none";
     }
   }
 }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
+function changeActivePosition(activeItem) {
+  for (let i = 0; i < categoryTitle.length; i++) {
+    categoryTitle[i].classList.remove("active");
   }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
+  activeItem.classList.add("active");
 }

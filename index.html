@@ -73,14 +73,14 @@
 
           <div class="btn-filter col-10">
             <div class="d-flex justify-content-around" id="myBtnContainer">
-              <button type="button" class="btn active btn-filter mx-2" onclick="filterSelection('all')">All</button>
-              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('logo')">Logo Design</button>
-              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('web')">Web</button>
-              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('ve')">Video
+              <button type="button" class="btn active btn-filter mx-2" id="all">All</button>
+              <button type="button" class="btn btn-filter mx-2" id="logo">Logo Design</button>
+              <button type="button" class="btn btn-filter mx-2" id="web">Web</button>
+              <button type="button" class="btn btn-filter mx-2" id="ve">Video
                 Editing</button>
-              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('branding')">Branding</button>
-              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('poster')">Poster</button>
-              <button type="button" class="btn btn-filter mx-2" onclick="filterSelection('product')">Product</button>
+              <button type="button" class="btn btn-filter mx-2" id="brand">Branding</button>
+              <button type="button" class="btn btn-filter mx-2" id="poster">Poster</button>
+              <button type="button" class="btn btn-filter mx-2" id="product">Product</button>
             </div>
           </div>
         </div>
@@ -91,9 +91,9 @@
   <!-- Carding -->
   <section class="patvice-shop">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-4 g-4 objects">
+      <div class="row row-cols-1 row-cols-md-4 g-4 filter">
 
-        <div class="col web">
+        <div class="col all web">
           <div class="card h-100" id="hbb">
             <img src="/frontend/images/raisyaa/hbb.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -127,7 +127,7 @@
           </div>
         </div>
 
-        <div class="col poster">
+        <div class="col all poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ilustrasi.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -163,7 +163,7 @@
           </div>
         </div>
 
-        <div class="col logo">
+        <div class="col all logo">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ask1.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -198,7 +198,7 @@
           </div>
         </div>
 
-        <div class="col poster">
+        <div class="col all poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/nico1.jpeg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -233,7 +233,7 @@
           </div>
         </div>
 
-        <div class="col brand">
+        <div class="col all brand">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/azra1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -268,7 +268,7 @@
           </div>
         </div>
 
-        <div class="col ve">
+        <div class="col all ve">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/farah1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -303,7 +303,7 @@
           </div>
         </div>
 
-        <div class="col product">
+        <div class="col all product">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/eko1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -338,7 +338,7 @@
           </div>
         </div>
 
-        <div class="col poster">
+        <div class="col all poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/aldila1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -374,7 +374,7 @@
           </div>
         </div>
 
-        <div class="col poster">
+        <div class="col all poster">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/aldila1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -410,7 +410,7 @@
           </div>
         </div>
 
-        <div class="col logo">
+        <div class="col all logo">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ask1.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -445,7 +445,7 @@
           </div>
         </div>
 
-        <div class="col web">
+        <div class="col all web">
           <div class="card h-100" id="hbb">
             <img src="/frontend/images/raisyaa/hbb.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -479,7 +479,7 @@
           </div>
         </div>
 
-        <div class="col brand">
+        <div class="col all brand">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/azra1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -514,7 +514,7 @@
           </div>
         </div>
 
-        <div class="col ve">
+        <div class="col all ve">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/farah1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -549,7 +549,7 @@
           </div>
         </div>
 
-        <div class="col product">
+        <div class="col allproduct">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/eko1.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -584,7 +584,7 @@
           </div>
         </div>
 
-        <div class="col poster">
+        <div class="col allposter">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ilustrasi.jpg" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -620,7 +620,7 @@
           </div>
         </div>
 
-        <div class="col logo">
+        <div class="col alllogo">
           <div class="card h-100">
             <img src="/frontend/images/raisyaa/ask1.png" class="thumbnail card-img-top img-fluid" alt="">
             <div class="card-body">
@@ -737,6 +737,8 @@
   <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
   <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
   <script src="/frontend/libraries/retina/retina.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

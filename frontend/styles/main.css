@@ -72,10 +72,6 @@ body a:active {
   font-weight: 500;
 }
 
-.show {
-  display: block;
-}
-
 /* Shop */
 .patvice-shop .card {
   border: none;
