@@ -72,6 +72,11 @@ body a:active {
   font-weight: 500;
 }
 
+.sort-filter .pilihan .btn-filter .btn-filter:focus {
+  font-weight: 500;
+  background-color: #367cff1c;
+}
+
 /* Shop */
 .patvice-shop .card {
   border: none;
@@ -162,6 +167,8 @@ body a:active {
 
 .number .btn {
   font-weight: bold;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .number .btn:hover {

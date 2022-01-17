@@ -80,6 +80,11 @@ body {
         &:hover {
           font-weight: 500;
         }
+
+        &:focus {
+          font-weight: 500;
+          background-color: #367cff1c;
+        }
       }
     }
   }
@@ -180,6 +185,7 @@ body {
 
   .btn {
     font-weight: bold;
+    align-content: center;
 
     &:hover {
       background-color: #5e95ff;
